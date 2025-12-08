@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pinkSoft: #FCEDE3;
+  --color-purpleDark: #A67575;
+  --color-pinkDark : #C7926E;
+  --color-pinkMedium : #CA7878;
+}
+
+@layer components {
+  /* Fix: remove the space before :hover */
+  .nav-hover:hover {
+    @apply bg-pinkSoft rounded-lg transition duration-300;
+  }
+
+  .primary-button {
+    @apply flex items-center gap-4 px-8 py-2 rounded-xl bg-[#CA7878] text-white;
+  }
+}
