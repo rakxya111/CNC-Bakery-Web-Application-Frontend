@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="w-1/2 flex flex-col gap-20 overflow-hidden">
         <div className="flex flex-col">
           <h1 className="text-6xl font-bold text-purpleDark leading-snug">
-            Design Irresistibly Personal Treats
+            Design <span className="text-black">Irresistibly Personal</span> Treats
           </h1>
           <p className="text-lg text-gray-700">
             Premium, made-to-order chocolates and cakes for every celebration.

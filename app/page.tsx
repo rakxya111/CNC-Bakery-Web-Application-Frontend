@@ -1,7 +1,4 @@
-import Featured from "@/components/Home/Featured";
-import Hero from "@/components/Home/Hero";
-import HeroBottom from "@/components/Home/HeroBottom";
-import Inquire from "@/components/Home/Inquire";
+import { Featured, Hero, HeroBottom, HowItWorks, Inquire } from "@/components/Home";
 import Navbar from "@/components/Home/Navbar";
 
 export default function Home() {
@@ -13,6 +10,7 @@ export default function Home() {
     <HeroBottom />
     <Featured />
     <Inquire />
+    <HowItWorks />
 
     </>
   );

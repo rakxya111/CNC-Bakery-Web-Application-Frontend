@@ -41,7 +41,7 @@ const Featured: React.FC = () => {
 
     },[])
   return (
-    <section className='flex flex-col rounded-4xl bg-pinkSoft py-12 px-20 mx-9 my-1'>
+    <section className=' flex flex-col rounded-4xl bg-pinkSoft py-12 px-20 mx-9 my-1'>
         <div className='text-left ml-10 my-10 '>
             <h2 className='text-3xl font-bold'>Featured Selections</h2>
             <p className='text-pinkDark text-xl font-semibold'>Our most loved creations this week.</p>

@@ -3,12 +3,25 @@
 @theme {
   --color-pinkSoft: #FCEDE3;
   --color-purpleDark: #A67575;
-  --color-pinkDark : #C7926E;
-  --color-pinkMedium : #CA7878;
+  --color-pinkDark: #C7926E;
+  --color-pinkMedium: #CA7878;
+  
+
+  /* Add Inter as the default sans font */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  /* Apply font-sans globally */
+  html {
+    @apply font-sans antialiased;
+  }
 }
 
 @layer components {
-  /* Fix: remove the space before :hover */
+  
   .nav-hover:hover {
     @apply bg-pinkSoft rounded-lg transition duration-300;
   }
