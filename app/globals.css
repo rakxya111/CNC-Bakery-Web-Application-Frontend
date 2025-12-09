@@ -5,7 +5,8 @@
   --color-purpleDark: #A67575;
   --color-pinkDark: #C7926E;
   --color-pinkMedium: #CA7878;
-  
+
+
 
   /* Add Inter as the default sans font */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,

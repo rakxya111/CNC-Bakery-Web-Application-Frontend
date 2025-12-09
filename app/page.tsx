@@ -1,4 +1,4 @@
-import { Featured, Hero, HeroBottom, HowItWorks, Inquire } from "@/components/Home";
+import { Featured, Hero, HeroBottom, HowItWorks, Inquire, ProductCatalog } from "@/components/Home";
 import Navbar from "@/components/Home/Navbar";
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
     <Featured />
     <Inquire />
     <HowItWorks />
+    <ProductCatalog />
 
     </>
   );

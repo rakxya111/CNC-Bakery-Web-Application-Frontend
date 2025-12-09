@@ -28,7 +28,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section className="py-3 px-10 my-1">
+    <section className="py-3 px-8 my-1">
      
       <hr className="text-pinkDark mb-5 font-medium" />
 
