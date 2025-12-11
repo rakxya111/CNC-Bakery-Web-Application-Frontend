@@ -3,29 +3,45 @@
 import { useState } from "react";
 import SearchInput from "../SearchInput";
 
+interface Navlink {
+  label: string;
+  href: string;
+}
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const NavlinkOptions: Navlink[] = [
+    { label: 'Home', href: '/' },
+    { label: 'Products', href: '#products' },
+    { label: 'Customize', href: '#customize' },
+    { label: 'How it works', href: '#howitworks' },
+    { label: 'Contact', href: '#contact' },
+    { label: 'Cart', href: '#cart' },
+  ];
+
   return (
     <nav className="w-full overflow-hidden">
       <div className="flex items-center justify-between px-4 py-4">
+        
         {/* Logo */}
         <div className="flex gap-2 items-center">
-          <a href="/" className="w-[36px]"><img src="./Logo/Vector.png" alt="vector" /></a>
-          <a href="/" className="w-[130px] mt-4"><img src="./Logo/Logo.png" alt="logo name" /></a>
+          <a href="/" className="w-9">
+            <img src="./Logo/Vector.png" alt="vector" />
+          </a>
+          <a href="/" className="w-[130px] mt-4">
+            <img src="./Logo/Logo.png" alt="logo name" />
+          </a>
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-10 items-center font-semibold ">
-          <a href="/" className="nav-hover">Home</a>
-          <a href="/" className="nav-hover">Products</a>
-          <a href="/" className="nav-hover">Customize</a>
-          <a href="/" className="nav-hover">How it Works</a>
-          <a href="/" className="nav-hover">Contact</a>
-          <a href="/" className="nav-hover">Cart</a>
+        <div className="hidden md:flex gap-10 items-center font-semibold">
+          {NavlinkOptions.map((option, index) => (
+            <a key={index} href={option.href} className="nav-hover">
+              {option.label}
+            </a>
+          ))}
           <SearchInput />
-        
         </div>
 
         {/* Hamburger Icon */}
@@ -43,12 +59,11 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center gap-4 py-4 font-semibold bg-white shadow-lg">
-          <a href="/">Home</a>
-          <a href="/">Products</a>
-          <a href="/">Customize</a>
-          <a href="/">How it Works</a>
-          <a href="/">Contact</a>
-          <a href="/">Cart</a>
+          {NavlinkOptions.map((option, index) => (
+            <a key={index} href={option.href}>
+              {option.label}
+            </a>
+          ))}
           <SearchInput />
         </div>
       )}

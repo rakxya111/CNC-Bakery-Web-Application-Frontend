@@ -1,4 +1,4 @@
-import { Featured, Hero, HeroBottom, HowItWorks, Inquire, ProductCatalog } from "@/components/Home";
+import { CustomizationTool, Featured, Hero, HeroBottom, HowItWorks, Inquire, ProductCatalog } from "@/components/Home";
 import Navbar from "@/components/Home/Navbar";
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
     <Inquire />
     <HowItWorks />
     <ProductCatalog />
+    <CustomizationTool />
 
     </>
   );
