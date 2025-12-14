@@ -68,15 +68,15 @@ const CustomizationTool: React.FC = () => {
       icon: MessageSquare,
       label: "Message",
       key: "message",
-      options: ['"Happy Birthday"', '"Congratulations"', '"Best Wishes"'],
+      options: ['Happy Birthday', 'Congratulations', 'Best Wishes'],
     },
   ];
 
   return (
-    <section className=" flex flex-col rounded-4xl bg-pinkSoft py-12 px-20 mx-9 my-1">
-      <div className="text-left ml-10 my-10 ">
+    <section className=" flex flex-col rounded-4xl bg-pinkSoft px-20 mx-9">
+      <div className="text-left ml-10 my-8 space-y-2">
         <h2 className="text-3xl font-bold">Customization Tool</h2>
-        <p className="text-pinkDark text-xl font-semibold">
+        <p className="text-pinkDark text-xl">
           Step-by-step builder for your custom creation.
         </p>
       </div>
