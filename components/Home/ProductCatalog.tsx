@@ -46,7 +46,7 @@ const ProductCatalog = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   return (
-    <section className=" flex flex-col py-6 px-10 mx-9">
+    <section className=" flex flex-col py-6 px-10 mx-9" id='products'>
       <div className="text-left mx-10 mb-10">
         <h2 className="text-3xl font-bold">Product Catalog</h2>
         <p className="text-pinkDark text-md pt-2">

@@ -73,7 +73,7 @@ const CustomizationTool: React.FC = () => {
   ];
 
   return (
-    <section className=" flex flex-col rounded-4xl bg-pinkSoft px-20 mx-9">
+    <section className=" flex flex-col rounded-4xl bg-pinkSoft pb-5 px-20 mx-9" id="customize">
       <div className="text-left ml-10 my-8 space-y-2">
         <h2 className="text-3xl font-bold">Customization Tool</h2>
         <p className="text-pinkDark text-xl">

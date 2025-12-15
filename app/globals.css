@@ -17,7 +17,7 @@
 @layer base {
   /* Apply font-sans globally */
   html {
-    @apply font-sans antialiased;
+    @apply font-sans antialiased scroll-smooth;
   }
 }
 
@@ -28,6 +28,10 @@
   }
 
   .primary-button {
-    @apply flex items-center gap-4 px-8 py-2 rounded-xl bg-[#CA7878] text-white;
+    @apply flex items-center gap-4 px-8 py-2 rounded-xl bg-pinkMedium text-white;
   }
+
+  /* .primary-button:hover {
+    @apply ;
+  } */
 }
