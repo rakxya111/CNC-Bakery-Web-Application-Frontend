@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SearchInput from "../SearchInput";
+import SearchOverlay from "./SearchOverlay";
 
 interface Navlink {
   label: string;
@@ -10,6 +11,7 @@ interface Navlink {
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
 
   const NavlinkOptions: Navlink[] = [
     { label: 'Home', href: '/' },
@@ -41,7 +43,7 @@ export default function Navbar() {
               {option.label}
             </a>
           ))}
-          <SearchInput />
+          <SearchInput onClick={() => setSearchOpen(true)} />
         </div>
 
         {/* Hamburger Icon */}
@@ -64,9 +66,14 @@ export default function Navbar() {
               {option.label}
             </a>
           ))}
-          <SearchInput />
         </div>
       )}
+
+            {/* 🔍 Search Overlay */}
+      <SearchOverlay
+        isOpen={searchOpen}
+        onClose={() => setSearchOpen(false)}
+      />
     </nav>
   );
 }

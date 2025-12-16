@@ -5,6 +5,7 @@
   --color-purpleDark: #A67575;
   --color-pinkDark: #C7926E;
   --color-pinkMedium: #CA7878;
+ 
 
 
 
@@ -34,4 +35,9 @@
   /* .primary-button:hover {
     @apply ;
   } */
+
+  .pill-btn {
+  @apply rounded-full bg-pinkSoft px-4 py-2 text-sm hover:bg-purpleDark hover:text-white transition;
+}
+
 }

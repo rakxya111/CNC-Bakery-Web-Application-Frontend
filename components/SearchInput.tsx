@@ -1,30 +1,24 @@
 import { Search } from "lucide-react";
-import { useState, FormEvent } from "react";
+import { useState } from "react";
 
-export default function SearchInput() {
-  const [query, setQuery] = useState<string>("");
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
-    // You can implement search action here
-    console.log("Search query:", query);
-  };
+export default function SearchInput({ onClick }: { onClick: () => void }) {
+  const [query, setQuery] = useState("");
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex items-center gap-2 border border-pinkSoft rounded-2xl px-3 py-2 w-[251px] bg-pinkSoft font-thin"
+    <div
+      onClick={onClick}
+      className="flex items-center gap-2 border border-pinkSoft rounded-2xl px-3 py-2 w-[251px] bg-pinkSoft font-thin cursor-pointer"
     >
       <Search size={18} />
       <input
         type="text"
-        name="search"
         value={query}
         placeholder="search chocolates and cakes..."
         onChange={(e) => setQuery(e.target.value)}
-        className="outline-none border-none flex-1 text-sm text-black bg-pinkSoft placeholder-black"
+        onFocus={onClick}
+        className="outline-none border-none flex-1 text-sm text-black bg-pinkSoft placeholder-black cursor-pointer"
+        readOnly   // important: prevent typing here
       />
-      <button type="submit" className="hidden"></button>
-    </form>
+    </div>
   );
 }
