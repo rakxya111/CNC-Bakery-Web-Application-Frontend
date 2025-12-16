@@ -7,14 +7,14 @@ type FooterLink = {
 
 const quickLinks: FooterLink[] = [
   { label: "Home", href: "/" },
-  { label: "Products", href: "/products" },
-  { label: "Customize", href: "/customize" },
-  { label: "How it works", href: "/how-it-works" },
+  { label: "Products", href: "#products" },
+  { label: "Customize", href: "#customize" },
+  { label: "How it works", href: "#howitworks" },
 ];
 
 const supportLinks: FooterLink[] = [
-  { label: "Order", href: "/order" },
-  { label: "Contact", href: "/contact" },
+  { label: "Order", href: "#cart" },
+  { label: "Contact", href: "#contact" },
   { label: "FAQs", href: "/" },
 ];
 
