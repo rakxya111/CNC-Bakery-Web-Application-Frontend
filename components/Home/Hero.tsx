@@ -1,4 +1,5 @@
 
+
 export default function Hero() {
   return (
     <section className="flex items-center pl-20 overflow-hidden rounded-4xl bg-pinkSoft mx-9 my-1 ">
@@ -15,29 +16,29 @@ export default function Hero() {
             Choose your base, flavors and decoration your way.
           </p>
         </div>
+<div className="flex gap-10">
+  <a href="#customize" className="primary-button">
+    <span>
+      <img
+        src="./ButtonIcons/Button_Icon2.svg"
+        className="w-full h-full object-cover"
+        alt=""
+      />
+    </span>
+    <span>Start Customizing</span>
+  </a>
 
-        <div className="flex gap-10">
-          <button className="primary-button">
-            <span>
-              <img
-                src="./ButtonIcons/Button_Icon2.svg "
-                className="w-full h-full object-cover"
-                alt=""
-              />
-            </span>
-            <span> Start Customizing</span>
-          </button>
-          <button className="primary-button bg-amber-50 text-black shadow-lg">
-            <span>
-              <img
-                src="./ButtonIcons/Button_Icon1.svg "
-                className="w-full h-full object-cover"
-                alt=""
-              />
-            </span>
-            <span>Browse Catalog</span>
-          </button>
-        </div>
+  <a href="#products" className="primary-button bg-amber-50 text-black shadow-lg">
+    <span>
+      <img
+        src="./ButtonIcons/Button_Icon1.svg"
+        className="w-full h-full object-cover"
+        alt=""
+      />
+    </span>
+    <span>Browse Catalog</span>
+  </a>
+</div>
       </div>
 
       {/* Right Image Section */}

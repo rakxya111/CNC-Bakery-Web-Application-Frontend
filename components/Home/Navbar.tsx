@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex gap-10 items-center font-semibold">
+        <div className="hidden md:flex gap-10 items-center font-medium">
           {NavlinkOptions.map((option, index) => (
             <a key={index} href={option.href} className="nav-hover">
               {option.label}
